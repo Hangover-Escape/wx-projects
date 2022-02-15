@@ -1,0 +1,16 @@
+<template>
+  <div class="biaoqian1 {{style}}">
+    C
+  </div>
+</template>
+
+<script>
+import wepy from '@wepy/core'
+wepy.component({})
+</script>
+
+<style lang="less" scoped>
+.biaoqian1 {
+  background: #ffc;
+}
+</style>

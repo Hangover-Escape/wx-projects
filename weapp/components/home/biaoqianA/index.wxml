@@ -1,0 +1,31 @@
+
+<view class="biaoqian1 {{style}}">
+  <view class="list_nav">
+    <van-grid bind_init="__initComponent" custom-class="grid">
+      <van-grid-item bind_init="__initComponent" icon="home-o" link-type="reLaunch" url="/pages/login/index" text="跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="search" link-type="reLaunch" url="/pages/login/index" text="跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="home-o" link-type="reLaunch" url="/pages/login/index" text="跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="search" link-type="reLaunch" url="/pages/login/index" text="跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="home-o" link-type="reLaunch" url="/pages/login/index" text="跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="search" link-type="reLaunch" url="/pages/login/index" text="跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="home-o" link-type="reLaunch" url="/pages/login/index" text="跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="search" link-type="reLaunch" url="/pages/login/index" text="跳转"></van-grid-item>
+    </van-grid>
+  </view>
+  <view class="list_nav_test">
+    <van-grid bind_init="__initComponent" clickable column-num="2" custom-class="grid">
+      <van-grid-item bind_init="__initComponent" icon="home-o" link-type="navigateTo" url="/pages/dashboard/index" text="Navigate 跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="search" link-type="reLaunch" url="/pages/dashboard/index" text="ReLaunch 跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="home-o" link-type="navigateTo" url="/pages/dashboard/index" text="Navigate 跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="search" link-type="reLaunch" url="/pages/dashboard/index" text="ReLaunch 跳转"></van-grid-item>
+    </van-grid>
+  </view>
+  <view class="list_nav_test">
+    <van-grid bind_init="__initComponent" clickable column-num="2" custom-class="grid">
+      <van-grid-item bind_init="__initComponent" icon="home-o" link-type="navigateTo" url="/pages/dashboard/index" text="Navigate 跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="search" link-type="reLaunch" url="/pages/dashboard/index" text="ReLaunch 跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="home-o" link-type="navigateTo" url="/pages/dashboard/index" text="Navigate 跳转"></van-grid-item>
+      <van-grid-item bind_init="__initComponent" icon="search" link-type="reLaunch" url="/pages/dashboard/index" text="ReLaunch 跳转"></van-grid-item>
+    </van-grid>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "首页",
+    "component": true,
+    "usingComponents": {
+        "van-grid-item": "./../../vant/grid-item/index",
+        "van-grid": "./../../vant/grid/index"
+    }
+}

@@ -1,0 +1,37 @@
+<!----------   wxs start ----------->
+<wxs module="utils" src="../wxs/utils.wxs"></wxs>
+<wxs module="computed" src="./index.wxs"></wxs>
+<!----------   wxs end   ----------->
+
+
+
+<van-cell size="{{ size }}" icon="{{ leftIcon }}" center="{{ center }}" border="{{ border }}" is-link="{{ isLink }}" required="{{ required }}" clickable="{{ clickable }}" title-width="{{ titleWidth }}" title-style="margin-right: 12px;" custom-style="{{ customStyle }}" arrow-direction="{{ arrowDirection }}" custom-class="van-field">
+  <slot name="left-icon" slot="icon"></slot>
+  <view wx:if="{{ label }}" class="label-class {{ utils.bem('field__label', { disabled }) }}" slot="title">
+    {{ label }}
+  </view>
+  <slot wx:else="" name="label" slot="title"></slot>
+  <view class="{{ utils.bem('field__body', [type]) }}">
+    <view class="{{ utils.bem('field__control', [inputAlign, 'custom']) }}" bindtap="onClickInput">
+      <slot name="input"></slot>
+    </view>
+    <include wx:if="{{ type === 'textarea' }}" src="./textarea.wxml"></include>
+    <include wx:else="" src="./input.wxml"></include>
+
+    <van-icon wx:if="{{ showClear }}" name="{{ clearIcon }}" class="van-field__clear-root van-field__icon-root" catch:touchstart="onClear"></van-icon>
+    <view class="van-field__icon-container" bind:tap="onClickIcon">
+      <van-icon wx:if="{{ rightIcon || icon }}" name="{{ rightIcon || icon }}" class="van-field__icon-root {{ iconClass }}" custom-class="right-icon-class"></van-icon>
+      <slot name="right-icon"></slot>
+      <slot name="icon"></slot>
+    </view>
+    <view class="van-field__button">
+      <slot name="button"></slot>
+    </view>
+  </view>
+  <view wx:if="{{ showWordLimit && maxlength }}" class="van-field__word-limit">
+    <view class="{{ utils.bem('field__word-num', { full: value.length >= maxlength }) }}">{{ value.length >= maxlength ? maxlength : value.length }}</view>/{{ maxlength }}
+  </view>
+  <view wx:if="{{ errorMessage }}" class="{{ utils.bem('field__error-message', [errorMessageAlign, { disabled, error }]) }}">
+    {{ errorMessage }}
+  </view>
+</van-cell>

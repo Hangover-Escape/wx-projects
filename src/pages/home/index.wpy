@@ -1,0 +1,99 @@
+<style lang="less">
+.homes {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+</style>
+<wxs module="m1" lang="babel">
+const getTime = (time) => {
+  let date = getDate(time);
+  let hour = date.getHours();
+  let mins = date.getMinutes();
+  let sec = date.getSeconds();
+  let milli = date.getMilliseconds();
+  return `${hour}:${mins}:${sec}.${milli}`;
+}
+module.exports.getTime = getTime;
+</wxs>
+<template>
+  <div class="homes">
+    <van-search shape="round"
+                focus
+                value="{{ value }}"
+                placeholder="请输入搜索关键词" />
+    <van-tabs active="{{ active }}">
+      <van-tab title="推荐">
+        <biaoqianA></biaoqianA>
+      </van-tab>
+      <van-tab title="功能2">
+        <biaoqianB></biaoqianB>
+      </van-tab>
+      <van-tab title="功能3">
+        <biaoqianC></biaoqianC>
+      </van-tab>
+      <van-tab title="功能4">
+        <biaoqianD></biaoqianD>
+      </van-tab>
+      <!-- <van-tab title="标签 5">
+        <biaoqianA></biaoqianA>
+      </van-tab>
+      <van-tab title="标签 6">
+        <biaoqianA></biaoqianA>
+      </van-tab> -->
+    </van-tabs>
+  </div>
+</template>
+
+<script>
+import wepy from '@wepy/core'
+// import eventHub from '../common/eventHub';
+// import { mapState } from '@wepy/x';
+// import store from '';
+import testMixin from '../../mixins/test'
+
+wepy.page({
+  config: {
+    navigationBarTitleText: 'test'
+  },
+  mixins: [testMixin],
+  data: {
+    value: '',
+
+  },
+
+  computed: {
+
+  },
+
+  methods: {
+
+  },
+
+  created () {
+    console.log('---1-------')
+    wx.getUserInfo({
+      success (res) {
+        // self.userInfo = res.userInfo;
+
+      }
+    });
+  }
+});
+</script>
+<config>
+{
+    navigationBarTitleText: '首页',
+    usingComponents: {
+      "van-search":"../../components/vant/search/index",
+      "van-tab":"../../components/vant/tab/index",
+      "van-tabs": "../../components/vant/tabs/index",
+      "biaoqianA":"../../components/home/biaoqianA/index",
+      "biaoqianB":"../../components/home/biaoqianB/index",
+      "biaoqianC":"../../components/home/biaoqianC/index",
+      "biaoqianD":"../../components/home/biaoqianD/index",
+      
+    },
+}
+</config>

@@ -1,0 +1,14 @@
+.biaoqian1 .list_nav {
+  padding: 10px;
+  background: #000;
+}
+.biaoqian1 .list_nav .grid {
+  border-radius: 10px;
+}
+.biaoqian1 .list_nav_test {
+  padding: 10px;
+}
+.biaoqian1 .list_nav_test .grid {
+  border-radius: 10px;
+}
+

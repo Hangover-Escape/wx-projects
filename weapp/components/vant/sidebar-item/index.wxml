@@ -1,0 +1,12 @@
+<!----------   wxs start ----------->
+<wxs module="utils" src="../wxs/utils.wxs"></wxs>
+<!----------   wxs end   ----------->
+
+
+<view class="{{ utils.bem('sidebar-item', { selected, disabled }) }} {{ selected ? 'active-class' : '' }} {{ disabled ? 'disabled-class' : '' }} custom-class" hover-class="van-sidebar-item--hover" hover-stay-time="70" bind:tap="onClick">
+  <view class="van-sidebar-item__text">
+    <van-info wx:if="{{ badge != null || info !== null || dot }}" dot="{{ dot }}" info="{{ badge != null ? badge : info }}"></van-info>
+    <view wx:if="{{ title }}">{{ title }}</view>
+    <slot wx:else="" name="title"></slot>
+  </view>
+</view>
