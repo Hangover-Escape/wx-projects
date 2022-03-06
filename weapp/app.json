@@ -33,5 +33,6 @@
     "usingComponents": {
         "van-search": "./components/vant/search/index"
     },
-    "debug": true
+    "debug": true,
+    "sitemapLocation": "sitemap.json"
 }
