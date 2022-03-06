@@ -38,8 +38,7 @@ module.exports.getTime = getTime;
                      active-id="{{ activeId }}"
                      bind:click-nav="onClickNav"
                      bind:click-item="onClickItem">
-      <!-- <image src="/static/image/nav_image/{{imageName}}.png"
-             /> -->
+      <!-- <image src="/static/image/nav_image/{{imageName}}.png" /> -->
       <div slot="content">
         <span>111</span>
       </div>
@@ -84,9 +83,6 @@ wepy.page({
       img: 'nav_03'
     },]
   },
-  // onChange (event) {
-  //   Notify({ type: 'primary', message: event.detail });
-  // },
   methods: {
     onClickNav (event) {
       console.log(event.$wx.detail.index, 'event1')

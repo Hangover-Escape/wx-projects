@@ -39,9 +39,6 @@ _core["default"].page({
       img: 'nav_03'
     }]
   },
-  // onChange (event) {
-  //   Notify({ type: 'primary', message: event.detail });
-  // },
   methods: {
     onClickNav: function onClickNav(event) {
       var _this = this;
@@ -59,7 +56,7 @@ _core["default"].page({
       console.log(detail.index, 'event2');
     }
   }
-}, {info: {"components":{"van-tree-select":{"path":"./../../components/vant/tree-select/index"},"van-sidebar":{"path":"./../../components/vant/sidebar/index"},"van-sidebar-item":{"path":"./../../components/vant/sidebar-item/index"}},"on":{"7-78":["click-nav","click-item"]}}, handlers: {'7-78': {"click-nav": function proxy () {
+}, {info: {"components":{"van-tree-select":{"path":"./../../components/vant/tree-select/index"},"van-sidebar":{"path":"./../../components/vant/sidebar/index"},"van-sidebar-item":{"path":"./../../components/vant/sidebar-item/index"}},"on":{"7-84":["click-nav","click-item"]}}, handlers: {'7-84': {"click-nav": function proxy () {
   var $wx = arguments[arguments.length - 1].$wx;
   var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
   var $args = $wx.detail && $wx.detail.arguments;

@@ -11,25 +11,25 @@ _core["default"].component({
       background: 'demo-text-3',
       China: '沙发',
       english: 'CALLIGARIS',
-      img: 'zuozi1'
+      img: 'icon_chuang_01'
     }, {
       value: 2,
       background: 'demo-text-3',
       China: '沙发',
       english: 'CALLIGARIS',
-      img: 'zuozi1'
+      img: 'icon_chuang_01'
     }, {
       value: 3,
       background: 'demo-text-3',
       China: '沙发',
       english: 'CALLIGARIS',
-      img: 'zuozi1'
+      img: 'icon_chuang_01'
     }, {
       value: 4,
       background: 'demo-text-3',
       China: '沙发',
       english: 'CALLIGARIS',
-      img: 'zuozi1'
+      img: 'icon_chuang_01'
     }]
   }
 }, {info: {"components":{},"on":{}}, handlers: {}, models: {}, refs: undefined });

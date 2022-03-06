@@ -22,27 +22,27 @@ wepy.component({
       value: 1,
       background: 'demo-text-1',
       content: '11',
-      img: 'zuozi1'
+      img: 'icon_chuang_01'
     }, {
       value: 2,
       background: 'demo-text-2',
       content: '11',
-      img: 'zuozi1'
+      img: 'icon_chuang_01'
     }, {
       value: 3,
       background: 'demo-text-3',
       content: '22',
-      img: 'zuozi1'
+      img: 'icon_chuang_01'
     }, {
       value: 3,
       background: 'demo-text-3',
       content: '22',
-      img: 'zuozi1'
+      img: 'icon_chuang_01'
     }, {
       value: 3,
       background: 'demo-text-3',
       content: '22',
-      img: 'zuozi1'
+      img: 'icon_chuang_01'
     }
     ]
   }

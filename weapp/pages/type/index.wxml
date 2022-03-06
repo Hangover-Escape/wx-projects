@@ -18,7 +18,7 @@ module.exports.getTime = getTime;
 <view class="selectTypes">
   
   
-  <van-tree-select bind_init="__initComponent" items="{{ items }}" height="100%" main-active-index="{{ mainActiveIndex }}" active-id="{{ activeId }}" data-wpy-evt="7-78" bind:click-nav="__dispatcher" bind:click-item="__dispatcher">
+  <van-tree-select bind_init="__initComponent" items="{{ items }}" height="100%" main-active-index="{{ mainActiveIndex }}" active-id="{{ activeId }}" data-wpy-evt="7-84" bind:click-nav="__dispatcher" bind:click-item="__dispatcher">
     
     <view slot="content">
       <label>111</label>
