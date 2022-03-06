@@ -1,0 +1,54 @@
+<template>
+  <div class="afterSale">
+    <van-row gutter="20"
+             custom-class="afterSaleStyle">
+      <van-col span="6"
+               custom-class="span">售后服务</van-col>
+      <van-col span="6"
+               custom-class="span">人工服务</van-col>
+      <van-col span="6"
+               custom-class="span">联系我们</van-col>
+      <van-col span="6"
+               custom-class="span">我的信息</van-col>
+    </van-row>
+    <div class="afterSaleFooter">
+      <div class="p">XXXXXXXXXXXXXXXXXX</div>
+      <div class="p">XXXXXXXXXXXX</div>
+      <div class="p">XXXXXXXXXXXXXXXX</div>
+    </div>
+  </div>
+</template>
+
+<script>
+import wepy from '@wepy/core'
+wepy.component({})
+</script>
+
+<style lang="less" scoped>
+.afterSale {
+  width: 90%;
+  margin: 0 auto;
+}
+.afterSaleStyle {
+  // background: #fcc;
+  .span {
+    color: #fff;
+    background: #000;
+    border: solid 2px #fff;
+    font-size: 14px;
+    padding: 5px 0;
+  }
+}
+.afterSaleFooter {
+  text-align: center;
+}
+</style>
+<config>
+{
+    usingComponents: {
+      "van-search":"../../vant/search/index",
+      "van-row": "../../vant/row/index",
+      "van-col": "../../vant/col/index"
+    },
+}
+</config>

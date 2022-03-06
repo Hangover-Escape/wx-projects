@@ -1,0 +1,11 @@
+
+<view class="biaoqian1 {{style}}">
+  <view class="title">迪曼精选</view>
+  <view class="swiper_02">
+    <view class="swiper_02_nav">
+      <view wx:for="{{ datas_02 }}" wx:for-index="index" wx:for-item="item" wx:key="index" key="{{ item.value }}" class="nav_list">
+        <image src="/static/image/zhuozi/{{item.img}}.jpg" alt>
+      </image></view>
+    </view>
+  </view>
+</view>

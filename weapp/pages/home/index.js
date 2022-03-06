@@ -1,6 +1,6 @@
 "use strict";
 
-var _core = _interopRequireDefault(require('./../../vendor.js')(0));
+var _core = _interopRequireDefault(require('./../../vendor.js')(1));
 
 var _test = _interopRequireDefault(require('./../../mixins/test.js'));
 
@@ -15,7 +15,31 @@ _core["default"].page({
   },
   mixins: [_test["default"]],
   data: {
-    value: ''
+    value: '',
+    indicatorDots1: true,
+    indicatorDots2: true,
+    vertical: false,
+    autoplay1: false,
+    autoplay2: false,
+    interval: 2000,
+    duration: 500 // datas_01: [{
+    //   value: 1,
+    //   background: 'demo-text-1',
+    //   content: '11',
+    //   img: 'nav_01'
+    // }, {
+    //   value: 2,
+    //   background: 'demo-text-2',
+    //   content: '22',
+    //   img: 'nav_02'
+    // }, {
+    //   value: 3,
+    //   background: 'demo-text-3',
+    //   content: '33',
+    //   img: 'nav_03'
+    // }
+    // ],
+
   },
   computed: {},
   methods: {},
@@ -26,4 +50,4 @@ _core["default"].page({
       }
     });
   }
-}, {info: {"components":{"van-search":{"path":"./../../components/vant/search/index"},"van-tab":{"path":"./../../components/vant/tab/index"},"van-tabs":{"path":"./../../components/vant/tabs/index"},"biaoqianA":{"path":"./../../components/home/biaoqianA/index"},"biaoqianB":{"path":"./../../components/home/biaoqianB/index"},"biaoqianC":{"path":"./../../components/home/biaoqianC/index"},"biaoqianD":{"path":"./../../components/home/biaoqianD/index"}},"on":{}}, handlers: {}, models: {}, refs: undefined });
+}, {info: {"components":{"van-search":{"path":"./../../components/vant/search/index"},"van-tab":{"path":"./../../components/vant/tab/index"},"van-tabs":{"path":"./../../components/vant/tabs/index"},"swiperNav":{"path":"./../../components/home/swiperNav/index"},"jsSelect":{"path":"./../../components/home/js-select/index"},"brand":{"path":"./../../components/home/brand/index"},"hotSpace":{"path":"./../../components/home/hotSpace/index"},"selectList":{"path":"./../../components/home/selectList/index"},"afterSale":{"path":"./../../components/home/afterSale/index"}},"on":{}}, handlers: {}, models: {}, refs: undefined });

@@ -1,0 +1,20 @@
+
+<view class="brand">
+  <view class="title">热销产品 <view class="span">更多>></view>
+  </view>
+  <view class="brand-ul">
+    <view class="brand-li">
+      <image src="/static/image/zhuozi/icon_chuang_01.jpg" alt>
+    </image></view>
+    <view class="brand-li">
+      <image src="/static/image/zhuozi/icon_chuang_02.jpg" alt>
+    </image></view>
+    <view class="brand-li">
+      <image src="/static/image/zhuozi/icon_chuang_03.jpg" alt>
+    </image></view>
+    <view class="brand-li">
+      <image src="/static/image/zhuozi/icon_chuang_04.jpg" alt>
+    </image></view>
+  </view>
+
+</view>

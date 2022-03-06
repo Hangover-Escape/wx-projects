@@ -1,0 +1,69 @@
+.hotSpace {
+  margin: 0 auto;
+  width: 98%;
+}
+.hotSpace .title {
+  display: flex;
+  height: 44px;
+  line-height: 44px;
+  width: 100%;
+  position: relative;
+}
+.hotSpace .title .span {
+  position: absolute;
+  right: 10px;
+}
+.hotSpace .host {
+  width: 100%;
+  height: 100%;
+}
+.hotSpace .host .host_restaurant {
+  width: 100%;
+  height: 115px;
+  display: flex;
+}
+.hotSpace .host .host_restaurant .host_restaurant_01 {
+  flex: 1;
+  position: relative;
+}
+.hotSpace .host .host_restaurant .host_restaurant_01 image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.hotSpace .host .host_restaurant .host_restaurant_01 .name {
+  position: absolute;
+  font-size: 18px;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+  color: #fff;
+}
+.hotSpace .host .host_restaurant .host_restaurant_01:nth-child(1) {
+  margin-right: 5px;
+}
+.hotSpace .host .host_restaurant .host_restaurant_01:nth-child(2) {
+  margin-left: 5px;
+}
+.hotSpace .host .host_livingRoom {
+  width: 100%;
+  height: 200px;
+  margin: 10px 0;
+}
+.hotSpace .host .host_livingRoom .host_livingRoom_01 {
+  height: 100%;
+  position: relative;
+}
+.hotSpace .host .host_livingRoom .host_livingRoom_01 image {
+  width: 100%;
+  height: 100%;
+}
+.hotSpace .host .host_livingRoom .host_livingRoom_01 .name {
+  position: absolute;
+  font-size: 18px;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+  color: #fff;
+}
+

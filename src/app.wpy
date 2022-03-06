@@ -8,6 +8,14 @@
 //   box-sizing: border-box;
 // }
 </style>
+<template>
+  <div>
+    <van-search shape="round"
+                focus
+                value="{{ value }}"
+                placeholder="请输入搜索关键词" />
+  </div>
+</template>
 
 <script>
 import wepy from '@wepy/core';
@@ -52,6 +60,7 @@ wepy.app({
 {
     pages: [
       'pages/home/index',
+      'pages/type/index',
       'pages/login/index'
     ],
     window: {
@@ -66,6 +75,9 @@ wepy.app({
         "pagePath": "pages/home/index",
         "text": "首页"
       }, {
+        "pagePath": "pages/type/index",
+        "text": "分类"
+      }, {
         "pagePath": "pages/login/index",
         "text": "新品"
       }]
@@ -73,6 +85,9 @@ wepy.app({
      "networkTimeout": {
       "request": 10000,
       "downloadFile": 10000
+    },
+     usingComponents: {
+      "van-search":"./components/vant/search/index",
     },
      "debug": true,
      

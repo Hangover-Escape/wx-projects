@@ -1,0 +1,33 @@
+
+<view class="hotSpace">
+  
+  <view class="title">热门分类</view>
+  <view class="host">
+    <view class="host_restaurant">
+      <view class="host_restaurant_01">
+        <image src="/static/image/zhuozi/icon_guizi_01.jpg" alt>
+        <view class="name">柜子</view>
+      </image></view>
+      <view class="host_restaurant_01">
+        <image src="/static/image/zhuozi/icon_guizi_02.jpg" alt>
+        <view class="name">衣柜</view>
+      </image></view>
+    </view>
+    <view class="host_livingRoom">
+      <view class="host_livingRoom_01">
+        <image src="/static/image/zhuozi/icon_guizi_02.jpg" alt="客厅">
+        <view class="name">客厅</view>
+      </image></view>
+    </view>
+    <view class="host_restaurant">
+      <view class="host_restaurant_01">
+        <image src="/static/image/zhuozi/icon_guizi_01.jpg" alt>
+        <view class="name">柜子</view>
+      </image></view>
+      <view class="host_restaurant_01">
+        <image src="/static/image/zhuozi/icon_guizi_02.jpg" alt>
+        <view class="name">衣柜</view>
+      </image></view>
+    </view>
+  </view>
+</view>

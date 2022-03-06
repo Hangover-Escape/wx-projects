@@ -1,0 +1,14 @@
+
+<view class="afterSale">
+  <van-row bind_init="__initComponent" gutter="20" custom-class="afterSaleStyle">
+    <van-col bind_init="__initComponent" span="6" custom-class="span">售后服务</van-col>
+    <van-col bind_init="__initComponent" span="6" custom-class="span">人工服务</van-col>
+    <van-col bind_init="__initComponent" span="6" custom-class="span">联系我们</van-col>
+    <van-col bind_init="__initComponent" span="6" custom-class="span">我的信息</van-col>
+  </van-row>
+  <view class="afterSaleFooter">
+    <view class="p">XXXXXXXXXXXXXXXXXX</view>
+    <view class="p">XXXXXXXXXXXX</view>
+    <view class="p">XXXXXXXXXXXXXXXX</view>
+  </view>
+</view>

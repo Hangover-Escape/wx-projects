@@ -1,6 +1,7 @@
 {
     "pages": [
         "pages/home/index",
+        "pages/type/index",
         "pages/login/index"
     ],
     "window": {
@@ -16,6 +17,10 @@
                 "text": "首页"
             },
             {
+                "pagePath": "pages/type/index",
+                "text": "分类"
+            },
+            {
                 "pagePath": "pages/login/index",
                 "text": "新品"
             }
@@ -25,6 +30,8 @@
         "request": 10000,
         "downloadFile": 10000
     },
-    "debug": true,
-    "usingComponents": {}
+    "usingComponents": {
+        "van-search": "./components/vant/search/index"
+    },
+    "debug": true
 }

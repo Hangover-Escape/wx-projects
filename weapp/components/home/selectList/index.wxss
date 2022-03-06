@@ -1,0 +1,40 @@
+.selectList {
+  width: 100%;
+}
+.selectList .title {
+  display: flex;
+  height: 44px;
+  line-height: 44px;
+  width: 100%;
+  position: relative;
+}
+.selectList .title .span {
+  position: absolute;
+  right: 10px;
+}
+.selectList .content_ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.selectList .content_ul .content_li {
+  width: 50%;
+  height: 174px;
+}
+.selectList .content_ul .content_li .content_image {
+  height: 130px;
+}
+.selectList .content_ul .content_li .content_image image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.selectList .content_ul .content_li .ellipsis {
+  height: 22px;
+  line-height: 22px;
+  font-size: 13px;
+  text-align: center;
+  color: #000;
+  z-index: 99;
+  font-family: Arial, 'Microsoft YaHei', 'Times New Roman', 'SimHei';
+}
+

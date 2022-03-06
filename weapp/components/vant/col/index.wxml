@@ -1,0 +1,10 @@
+<!----------   wxs start ----------->
+<wxs module="utils" src="../wxs/utils.wxs"></wxs>
+<wxs module="computed" src="./index.wxs"></wxs>
+<!----------   wxs end   ----------->
+
+
+
+<view class="custom-class {{ utils.bem('col', [span]) }} {{ offset ? 'van-col--offset-' + offset : '' }}" style="{{ computed.rootStyle({ gutter }) }}">
+  <slot></slot>
+</view>

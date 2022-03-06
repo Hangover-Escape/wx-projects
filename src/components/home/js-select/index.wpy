@@ -1,0 +1,90 @@
+<template>
+  <div class="biaoqian1 {{style}}">
+    <div class="title">迪曼精选</div>
+    <div class="swiper_02">
+      <div class="swiper_02_nav">
+        <div class="nav_list"
+             v-for="item in datas_02"
+             :key="item.value">
+          <img src="/static/image/zhuozi/{{item.img}}.jpg"
+               alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import wepy from '@wepy/core'
+wepy.component({
+  data: {
+    datas_02: [{
+      value: 1,
+      background: 'demo-text-1',
+      content: '11',
+      img: 'zuozi1'
+    }, {
+      value: 2,
+      background: 'demo-text-2',
+      content: '11',
+      img: 'zuozi1'
+    }, {
+      value: 3,
+      background: 'demo-text-3',
+      content: '22',
+      img: 'zuozi1'
+    }, {
+      value: 3,
+      background: 'demo-text-3',
+      content: '22',
+      img: 'zuozi1'
+    }, {
+      value: 3,
+      background: 'demo-text-3',
+      content: '22',
+      img: 'zuozi1'
+    }
+    ]
+  }
+})
+</script>
+
+<style lang="less" scoped>
+.title {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 10px;
+}
+
+.swiper_02 {
+  overflow-x: hidden; //外层div 横向滑动
+  width: 100%;
+  height: 160px;
+  .swiper_02_nav {
+    display: -webkit-box;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    /* 隐藏下方的滚动条 */
+    .slide-box::-webkit-scrollbar {
+      background-color: transparent;
+    }
+    .slide-box {
+      -ms-overflow-style: none;
+    }
+    .slide-box {
+      overflow: -moz-scrollbars-none;
+    }
+    .nav_list {
+      width: 278px; //给表格宽度
+      height: 150px;
+      margin-right: 15px;
+      overflow: hidden;
+      border-radius: 5px;
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+</style>

@@ -1,0 +1,32 @@
+.brand {
+  width: 100%;
+  height: 525px;
+}
+.brand .title {
+  display: flex;
+  height: 44px;
+  line-height: 44px;
+  width: 100%;
+  position: relative;
+}
+.brand .title .span {
+  position: absolute;
+  right: 10px;
+}
+.brand .brand-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.brand .brand-ul .brand-li {
+  width: 172px;
+  height: 230px;
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.brand .brand-ul .brand-li image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+

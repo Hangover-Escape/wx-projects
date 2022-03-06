@@ -1,10 +1,10 @@
 "use strict";
 
-var _core = _interopRequireDefault(require('./../vendor.js')(0));
+var _core = _interopRequireDefault(require('./../vendor.js')(1));
 
 var _store = _interopRequireDefault(require('./../store/index.js'));
 
-var _x = require('./../vendor.js')(4);
+var _x = require('./../vendor.js')(3);
 
 var _this = void 0;
 
@@ -52,7 +52,7 @@ _core["default"].component({
       console.log(this.$name + ' minus tap');
     }
   })
-}, {info: {"components":{},"on":{}}, handlers: {'18-0': {"tap": function proxy () {
+}, {info: {"components":{},"on":{}}, handlers: {'31-0': {"tap": function proxy () {
   var $wx = arguments[arguments.length - 1].$wx;
   var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
   var $args = $wx.detail && $wx.detail.arguments;
@@ -60,7 +60,7 @@ _core["default"].component({
   return (function () {
     _vm.plus.apply(_vm, $args || [$event]);
   })();
-}},'18-1': {"tap": function proxy () {
+}},'31-1': {"tap": function proxy () {
   var $wx = arguments[arguments.length - 1].$wx;
   var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
   var $args = $wx.detail && $wx.detail.arguments;
@@ -68,7 +68,7 @@ _core["default"].component({
   return (function () {
     _vm.minus.apply(_vm, $args || [$event]);
   })();
-}},'18-2': {"tap": function proxy () {
+}},'31-2': {"tap": function proxy () {
   var $wx = arguments[arguments.length - 1].$wx;
   var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
   var $args = $wx.detail && $wx.detail.arguments;
@@ -76,7 +76,7 @@ _core["default"].component({
   return (function () {
     _vm.increment.apply(_vm, $args || [$event]);
   })();
-}},'18-3': {"tap": function proxy () {
+}},'31-3': {"tap": function proxy () {
   var $wx = arguments[arguments.length - 1].$wx;
   var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
   var $args = $wx.detail && $wx.detail.arguments;
@@ -84,7 +84,207 @@ _core["default"].component({
   return (function () {
     _vm.decrement.apply(_vm, $args || [$event]);
   })();
-}},'18-4': {"tap": function proxy () {
+}},'31-4': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.incrementAsync.apply(_vm, $args || [$event]);
+  })();
+}}}, models: {}, refs: undefined }, {info: {"components":{},"on":{}}, handlers: {'31-0': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.plus.apply(_vm, $args || [$event]);
+  })();
+}},'31-1': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.minus.apply(_vm, $args || [$event]);
+  })();
+}},'31-2': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.increment.apply(_vm, $args || [$event]);
+  })();
+}},'31-3': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.decrement.apply(_vm, $args || [$event]);
+  })();
+}},'31-4': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.incrementAsync.apply(_vm, $args || [$event]);
+  })();
+}}}, models: {}, refs: undefined }, {info: {"components":{},"on":{}}, handlers: {'31-0': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.plus.apply(_vm, $args || [$event]);
+  })();
+}},'31-1': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.minus.apply(_vm, $args || [$event]);
+  })();
+}},'31-2': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.increment.apply(_vm, $args || [$event]);
+  })();
+}},'31-3': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.decrement.apply(_vm, $args || [$event]);
+  })();
+}},'31-4': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.incrementAsync.apply(_vm, $args || [$event]);
+  })();
+}}}, models: {}, refs: undefined }, {info: {"components":{},"on":{}}, handlers: {'31-0': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.plus.apply(_vm, $args || [$event]);
+  })();
+}},'31-1': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.minus.apply(_vm, $args || [$event]);
+  })();
+}},'31-2': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.increment.apply(_vm, $args || [$event]);
+  })();
+}},'31-3': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.decrement.apply(_vm, $args || [$event]);
+  })();
+}},'31-4': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.incrementAsync.apply(_vm, $args || [$event]);
+  })();
+}}}, models: {}, refs: undefined }, {info: {"components":{},"on":{}}, handlers: {'31-0': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.plus.apply(_vm, $args || [$event]);
+  })();
+}},'31-1': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.minus.apply(_vm, $args || [$event]);
+  })();
+}},'31-2': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.increment.apply(_vm, $args || [$event]);
+  })();
+}},'31-3': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.decrement.apply(_vm, $args || [$event]);
+  })();
+}},'31-4': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.incrementAsync.apply(_vm, $args || [$event]);
+  })();
+}}}, models: {}, refs: undefined }, {info: {"components":{},"on":{}}, handlers: {'31-0': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.plus.apply(_vm, $args || [$event]);
+  })();
+}},'31-1': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.minus.apply(_vm, $args || [$event]);
+  })();
+}},'31-2': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.increment.apply(_vm, $args || [$event]);
+  })();
+}},'31-3': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.decrement.apply(_vm, $args || [$event]);
+  })();
+}},'31-4': {"tap": function proxy () {
   var $wx = arguments[arguments.length - 1].$wx;
   var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
   var $args = $wx.detail && $wx.detail.arguments;

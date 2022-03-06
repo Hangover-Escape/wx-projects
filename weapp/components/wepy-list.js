@@ -1,6 +1,6 @@
 "use strict";
 
-var _core = _interopRequireDefault(require('./../vendor.js')(0));
+var _core = _interopRequireDefault(require('./../vendor.js')(1));
 
 var _this = void 0;
 
@@ -38,7 +38,7 @@ _core["default"].component({
     }
   },
   onLoad: function onLoad() {}
-}, {info: {"components":{},"on":{}}, handlers: {'16-0': {"tap": function proxy () {
+}, {info: {"components":{},"on":{}}, handlers: {'29-0': {"tap": function proxy () {
   var $wx = arguments[arguments.length - 1].$wx;
   var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
   var $args = $wx.detail && $wx.detail.arguments;
@@ -46,7 +46,7 @@ _core["default"].component({
   return (function () {
     _vm.add.apply(_vm, $args || [$event]);
   })();
-}},'16-1': {"tap": function proxy () {
+}},'29-1': {"tap": function proxy () {
   var $wx = arguments[arguments.length - 1].$wx;
   var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
   var $args = $wx.detail && $wx.detail.arguments;
@@ -54,7 +54,112 @@ _core["default"].component({
   return (function () {
     _vm.tap.apply(_vm, $args || [$event]);
   })();
-}},'16-2': {"tap": function proxy (index) {
+}},'29-2': {"tap": function proxy (index) {
+    var _vm=this;
+  return (function () {
+    _vm.remove(index);
+  })();
+}}}, models: {}, refs: undefined }, {info: {"components":{},"on":{}}, handlers: {'29-0': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.add.apply(_vm, $args || [$event]);
+  })();
+}},'29-1': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.tap.apply(_vm, $args || [$event]);
+  })();
+}},'29-2': {"tap": function proxy (index) {
+    var _vm=this;
+  return (function () {
+    _vm.remove(index);
+  })();
+}}}, models: {}, refs: undefined }, {info: {"components":{},"on":{}}, handlers: {'29-0': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.add.apply(_vm, $args || [$event]);
+  })();
+}},'29-1': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.tap.apply(_vm, $args || [$event]);
+  })();
+}},'29-2': {"tap": function proxy (index) {
+    var _vm=this;
+  return (function () {
+    _vm.remove(index);
+  })();
+}}}, models: {}, refs: undefined }, {info: {"components":{},"on":{}}, handlers: {'29-0': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.add.apply(_vm, $args || [$event]);
+  })();
+}},'29-1': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.tap.apply(_vm, $args || [$event]);
+  })();
+}},'29-2': {"tap": function proxy (index) {
+    var _vm=this;
+  return (function () {
+    _vm.remove(index);
+  })();
+}}}, models: {}, refs: undefined }, {info: {"components":{},"on":{}}, handlers: {'29-0': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.add.apply(_vm, $args || [$event]);
+  })();
+}},'29-1': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.tap.apply(_vm, $args || [$event]);
+  })();
+}},'29-2': {"tap": function proxy (index) {
+    var _vm=this;
+  return (function () {
+    _vm.remove(index);
+  })();
+}}}, models: {}, refs: undefined }, {info: {"components":{},"on":{}}, handlers: {'29-0': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.add.apply(_vm, $args || [$event]);
+  })();
+}},'29-1': {"tap": function proxy () {
+  var $wx = arguments[arguments.length - 1].$wx;
+  var $event = ($wx.detail && $wx.detail.arguments) ? $wx.detail.arguments[0] : arguments[arguments.length -1];
+  var $args = $wx.detail && $wx.detail.arguments;
+  var _vm=this;
+  return (function () {
+    _vm.tap.apply(_vm, $args || [$event]);
+  })();
+}},'29-2': {"tap": function proxy (index) {
     var _vm=this;
   return (function () {
     _vm.remove(index);

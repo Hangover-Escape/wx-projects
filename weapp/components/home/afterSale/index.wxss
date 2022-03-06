@@ -1,0 +1,15 @@
+.afterSale {
+  width: 90%;
+  margin: 0 auto;
+}
+.afterSaleStyle .span {
+  color: #fff;
+  background: #000;
+  border: solid 2px #fff;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.afterSaleFooter {
+  text-align: center;
+}
+

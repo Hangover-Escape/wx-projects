@@ -6,6 +6,6 @@
         "group": "./../../components/group",
         "counter": "./../../components/counter",
         "panel": "./../../components/panel",
-        "slide-view": "./../../$vendor/miniprogram-slide-view/miniprogram_dist/index"
+        "slide-view": "./../../$vendor/_miniprogram-slide-view@0.0.3@miniprogram-slide-view/miniprogram_dist/index"
     }
 }

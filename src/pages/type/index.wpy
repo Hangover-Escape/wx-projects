@@ -1,0 +1,116 @@
+<style lang="less">
+.selectTypes {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  // background: #000;
+}
+.type_list {
+}
+</style>
+<wxs module="m1" lang="babel">
+const getTime = (time) => {
+  let date = getDate(time);
+  let hour = date.getHours();
+  let mins = date.getMinutes();
+  let sec = date.getSeconds();
+  let milli = date.getMilliseconds();
+  return `${hour}:${mins}:${sec}.${milli}`;
+}
+module.exports.getTime = getTime;
+</wxs>
+<template>
+  <div class="selectTypes">
+    <!-- <van-sidebar custom-class="type_list"
+                 active-key="{{ activeKey }}"
+                 bind:change="onChange">
+      <van-sidebar-item title="客厅" />
+      <van-sidebar-item title="餐厅" />
+      <van-sidebar-item title="卧室" />
+      <van-sidebar-item title="书房" />
+      <van-sidebar-item title="灯饰" />
+      <van-sidebar-item title="家饰" />
+    </van-sidebar> -->
+    <!-- <van-notify id="van-notify" /> -->
+    <van-tree-select items="{{ items }}"
+                     height="100%"
+                     main-active-index="{{ mainActiveIndex }}"
+                     active-id="{{ activeId }}"
+                     bind:click-nav="onClickNav"
+                     bind:click-item="onClickItem">
+      <!-- <image src="/static/image/nav_image/{{imageName}}.png"
+             /> -->
+      <div slot="content">
+        <span>111</span>
+      </div>
+    </van-tree-select>
+  </div>
+</template>
+
+<script>
+import wepy from '@wepy/core'
+// import eventHub from '../common/eventHub';
+// import { mapState } from '@wepy/x';
+// import store from '';
+import testMixin from '../../mixins/test'
+
+wepy.page({
+  config: {
+    navigationBarTitleText: 'test'
+  },
+  // mixins: [testMixin],
+  data: {
+    activeKey: 0,
+    activeId: null,
+    mainActiveIndex: 0,
+    imageName: 'nav_01',
+    items: [{
+      text: '组1',
+      id: 0,
+      // 禁用选项
+      disabled: false,
+      img: 'nav_01'
+    }, {
+      text: '组2',
+      id: 1,
+      // 禁用选项
+      disabled: false,
+      img: 'nav_02'
+    }, {
+      text: '组3',
+      id: 2,
+      // 禁用选项
+      disabled: false,
+      img: 'nav_03'
+    },]
+  },
+  // onChange (event) {
+  //   Notify({ type: 'primary', message: event.detail });
+  // },
+  methods: {
+    onClickNav (event) {
+      console.log(event.$wx.detail.index, 'event1')
+      this.items.map(item => {
+        if (item.id == event.$wx.detail.index) {
+          this.imageName = item.img
+        }
+      })
+    },
+    onClickItem ({ detail = {} }) {
+      console.log(detail.index, 'event2')
+    }
+  }
+
+
+});
+</script>
+<config>
+{
+    navigationBarTitleText: '首页',
+    usingComponents: {
+      "van-tree-select": "../../components/vant//tree-select/index",
+      "van-sidebar": "../../components/vant/sidebar/index",
+      "van-sidebar-item": "../../components/vant/sidebar-item/index"
+    },
+}
+</config>

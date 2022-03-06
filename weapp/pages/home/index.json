@@ -5,9 +5,11 @@
         "van-search": "./../../components/vant/search/index",
         "van-tab": "./../../components/vant/tab/index",
         "van-tabs": "./../../components/vant/tabs/index",
-        "biaoqianA": "./../../components/home/biaoqianA/index",
-        "biaoqianB": "./../../components/home/biaoqianB/index",
-        "biaoqianC": "./../../components/home/biaoqianC/index",
-        "biaoqianD": "./../../components/home/biaoqianD/index"
+        "swiperNav": "./../../components/home/swiperNav/index",
+        "jsSelect": "./../../components/home/js-select/index",
+        "brand": "./../../components/home/brand/index",
+        "hotSpace": "./../../components/home/hotSpace/index",
+        "selectList": "./../../components/home/selectList/index",
+        "afterSale": "./../../components/home/afterSale/index"
     }
 }

@@ -1,0 +1,16 @@
+
+<view class="selectList">
+  <view class="title">猜你喜欢
+    <view class="span">更多>></view>
+  </view>
+  <view class="content_ul">
+    <view wx:for="{{ selectListDatas }}" wx:for-index="index" wx:for-item="item" wx:key="index" key="{{ item.value }}" class="content_li">
+      <view class="content_image">
+        <image src="/static/image/zhuozi/{{item.img}}.jpg" alt>
+      </image></view>
+      <view class="ellipsis">CALLIGARIS</view>
+      <view class="ellipsis">沙发</view>
+    </view>
+
+  </view>
+</view>

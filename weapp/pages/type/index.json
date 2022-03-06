@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "首页",
+    "component": true,
+    "usingComponents": {
+        "van-tree-select": "./../../components/vant/tree-select/index",
+        "van-sidebar": "./../../components/vant/sidebar/index",
+        "van-sidebar-item": "./../../components/vant/sidebar-item/index"
+    }
+}

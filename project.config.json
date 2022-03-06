@@ -2,9 +2,9 @@
     "description": "A WePY project",
     "setting": {
         "urlCheck": true,
-        "es6": false,
-        "enhance": false,
-        "postcss": false,
+        "es6": true,
+        "enhance": true,
+        "postcss": true,
         "preloadBackgroundData": false,
         "minified": true,
         "newFeature": false,
@@ -37,11 +37,11 @@
                 "miniprogramNpmDistDir": "./"
             }
         ],
-        "minifyWXSS": false,
+        "minifyWXSS": true,
         "showES6CompileOption": false
     },
     "compileType": "miniprogram",
-    "appid": "wx01b65b52b1467e06",
+    "appid": "wx041665814d50cd33",
     "projectname": "projects01",
     "miniprogramRoot": "weapp/",
     "libVersion": "2.21.0",

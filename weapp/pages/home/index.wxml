@@ -16,20 +16,19 @@ module.exports.getTime = getTime;
 <!----------   wxs end   ----------->
 
 <view class="homes">
-  <van-search bind_init="__initComponent" shape="round" focus value="{{ value }}" placeholder="请输入搜索关键词"></van-search>
-  <van-tabs bind_init="__initComponent" active="{{ active }}">
-    <van-tab bind_init="__initComponent" title="推荐">
-      <biaoqianA bind_init="__initComponent"></biaoqianA>
-    </van-tab>
-    <van-tab bind_init="__initComponent" title="功能2">
-      <biaoqianB bind_init="__initComponent"></biaoqianB>
-    </van-tab>
-    <van-tab bind_init="__initComponent" title="功能3">
-      <biaoqianC bind_init="__initComponent"></biaoqianC>
-    </van-tab>
-    <van-tab bind_init="__initComponent" title="功能4">
-      <biaoqianD bind_init="__initComponent"></biaoqianD>
-    </van-tab>
+  
+  <swiperNav bind_init="__initComponent"></swiperNav>
+  
+  <jsSelect bind_init="__initComponent"></jsSelect>
+  <view class="homes-content">
     
-  </van-tabs>
+    <brand bind_init="__initComponent"></brand>
+    
+    <hotSpace bind_init="__initComponent"></hotSpace>
+    
+    <selectList bind_init="__initComponent"></selectList>
+    
+    <afterSale bind_init="__initComponent"></afterSale>
+  </view>
+
 </view>
